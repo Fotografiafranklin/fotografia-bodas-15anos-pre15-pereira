@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!-- SEO PRINCIPAL -->
+    <meta charset="UTF-8">
+    <title>Fotografía Profesional en Pereira | 15 Años, Bodas y Pre 15</title>
+    <meta name="description" content="Fotografía profesional en Pereira para 15 años, bodas y sesiones pre 15. Capturamos momentos únicos con estilo y emoción.">
+    <meta name="keywords" content="fotografía 15 años Pereira, fotógrafo bodas Pereira, sesiones pre 15, fotografía profesional">
+    <meta name="author" content="Fotografía Franklin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- OPEN GRAPH OPTIMIZADO PARA WHATSAPP -->
+    <meta property="og:title" content="Fotografía Profesional | 15 Años, Bodas y Pre 15">
+    <meta property="og:description" content="Elige el tipo de sesión fotográfica que deseas y descubre nuestro trabajo profesional.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fotografiafranklin.github.io/">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/pw/AP1GczOU_p7_oo_wxM8-ZiMe76iii1UPr0OHbQqSxSMfkPSHH6EdIuwLhp2qksSxIUYf6asddNrqkC2Y2Rs4teIVX7dQ1of00yi-QSdGNb7mUjJ9P4AsfMF3T4Eyv0--YHW1sMBjTfWXSclINLHydx34m-Ps6w=w1394-h929-s-no-gm?authuser=0">
+
+    <!-- FUENTE -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        /* HERO + PARALLAX */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        /* FONDO PARALLAX CON 3 IMÁGENES */
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                url("https://lh3.googleusercontent.com/pw/AP1GczOU_p7_oo_wxM8-ZiMe76iii1UPr0OHbQqSxSMfkPSHH6EdIuwLhp2qksSxIUYf6asddNrqkC2Y2Rs4teIVX7dQ1of00yi-QSdGNb7mUjJ9P4AsfMF3T4Eyv0--YHW1sMBjTfWXSclINLHydx34m-Ps6w=w1394-h929-s-no-gm?authuser=0") left center/cover no-repeat,
+                url("https://lh3.googleusercontent.com/pw/AP1GczOB8dB9rg_mQmSjoztl6bJkWmNF67bfTNCs0YZRAQ2lL8PstNyD6waqD1jX2zmcjJUS6Wb5Zctfy1qog6Vi7CrO24gF-Fj-wuQDCIgyovlP6GVs9tRS0k59dYXsYZJsz825hgNwK4N91FVoTOfvknI5wQ=w619-h929-s-no-gm?authuser=0") center center/cover no-repeat,
+                url("https://lh3.googleusercontent.com/pw/AP1GczOZtbwej5_8KUHhxA1uVmviNk5-tlSy6bmnr0jsijvn-4IyD5UFunuQdMY7JdOf3kJiC_yG7dU5Mw5ykP3XfpTfFQ5KOZ7fCrjJZU9uvrJPrQgngjn_oBJPawMiKYtfP65CH7p0OxhWMYqmPGEraqQaog=w619-h929-s-no-gm?authuser=0") right center/cover no-repeat;
+            background-attachment: fixed;
+            filter: brightness(0.55);
+            z-index: -2;
+        }
+
+        /* OVERLAY */
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.45);
+            z-index: -1;
+        }
+
+        /* CONTENIDO */
+        .content {
+            max-width: 640px;
+            padding: 20px;
+            animation: slideUp 1s ease forwards;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        /* BOTONES ANIMADOS */
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #000;
+            background: #fff;
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .buttons a::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.05);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .buttons a:hover {
+            transform: translateY(-3px) scale(1.05);
+        }
+
+        .buttons a:hover::after {
+            opacity: 1;
+        }
+
+        /* RESPONSIVE */
+        @media (min-width: 768px) {
+            h1 { font-size: 3.1rem; }
+            p { font-size: 1.35rem; }
+
+            .buttons {
+                flex-direction: row;
+            }
+
+            .buttons a {
+                flex: 1;
+            }
+        }
+
+        /* ANIMACIONES */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<section class="hero">
+    <div class="overlay"></div>
+
+    <div class="content">
+        <h1>Elige tu sesión fotográfica ideal</h1>
+        <p>Haz clic y descubre nuestro trabajo profesional en cada experiencia.</p>
+
+        <div class="buttons">
+            <a href="https://fotografiafranklin.github.io/fotografia-15-anos-pereira/" target="_blank">15 Años</a>
+            <a href="https://fotografiafranklin.github.io/fotografia-video-bodas-pereira/" target="_blank">Bodas</a>
+            <a href="https://fotografiafranklin.github.io/sesiones-pre-15-pereira/" target="_blank">Pre 15</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
